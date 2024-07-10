@@ -49,7 +49,7 @@ function main() {
   browser.runtime.onStartup.addListener(() => {
     void LocalStorage.compileRules();
     void Sync.sync();
-    void Subscriptions.updateAll();
+    void Subscriptions.updateAll(true);
     void SearchEngines.registerContentScripts();
     if (process.env.WATCH === "true" && process.env.BROWSER === "chrome") {
       void Watch.watch();

@@ -70,7 +70,7 @@ export function update(id: SubscriptionId): Promise<void> {
   });
 }
 
-export async function updateAll(): Promise<void> {
+export async function updateAll(first = false): Promise<void> {
   const { subscriptions, updateInterval } = await loadFromRawStorage([
     "subscriptions",
     "updateInterval",
@@ -85,5 +85,6 @@ export async function updateAll(): Promise<void> {
     periodInMinutes: updateInterval,
   });
 
-  await Promise.all(numberKeys(subscriptions).map(update));
+  if (!first)
+    await Promise.all(numberKeys(subscriptions).map(update));
 }
