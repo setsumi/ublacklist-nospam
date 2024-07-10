@@ -1,6 +1,8 @@
 # uBlacklist-nospam
 
-Fork made to disable forced subscriptions update on each browser restart.
+⚠️ **Fork made to disable forced subscriptions update on each browser restart** ⚠️
+
+---
 
 [简体中文](README.zh-CN.md)
 
