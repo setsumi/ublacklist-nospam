@@ -1,7 +1,7 @@
 import { exportAsMessages } from "../helpers.ts";
 
 export default exportAsMessages({
-  extensionName: "uBlacklist",
+  extensionName: "uBlacklist-nospam",
   extensionDescription:
     "Empêche des sites spécifiés d'apparaître dans les résultats de recherche Google",
   lang: "fr",

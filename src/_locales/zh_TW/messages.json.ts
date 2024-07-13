@@ -1,7 +1,7 @@
 import { exportAsMessages } from "../helpers.ts";
 
 export default exportAsMessages({
-  extensionName: "uBlacklist",
+  extensionName: "uBlacklist-nospam",
   extensionDescription: "封鎖 Google 搜尋結果中的特定網站結果",
   lang: "zh-tw",
   // change later when website is ready

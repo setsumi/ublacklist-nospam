@@ -1,7 +1,7 @@
 import { exportAsMessages } from "../helpers.ts";
 
 export default exportAsMessages({
-  extensionName: "uBlacklist",
+  extensionName: "uBlacklist-nospam",
   extensionDescription: "Блокирует сайты в поисковой выдаче Google",
   lang: "ru",
   error: "Ошибка: $1",

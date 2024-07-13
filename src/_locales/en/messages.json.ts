@@ -2,7 +2,7 @@ import { exportAsMessages } from "../helpers.ts";
 
 export default exportAsMessages({
   // The extension name.
-  extensionName: "uBlacklist",
+  extensionName: "uBlacklist-nospam",
 
   // The extension description.
   extensionDescription:
