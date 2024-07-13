@@ -45,18 +45,18 @@ jobs:
           name: ublacklist-nospam
           path: dist
 
-      - name: "[Website] Get changed files"
-        id: website-changed-files
-        uses: tj-actions/changed-files@v44
-        with:
-          files: website/**
+      #- name: "[Website] Get changed files"
+      #  id: website-changed-files
+      #  uses: tj-actions/changed-files@v44
+      #  with:
+      #    files: website/**
 
-      - name: "[Website] Check"
-        if: steps.website-changed-files.outputs.any_changed == 'true'
-        run: pnpm check
-        working-directory: website
+      #- name: "[Website] Check"
+      #  if: steps.website-changed-files.outputs.any_changed == 'true'
+      #  run: pnpm check
+      #  working-directory: website
 
-      - name: "[Website] Build"
-        if: steps.website-changed-files.outputs.any_changed == 'true'
-        run: pnpm build
-        working-directory: website
+      #- name: "[Website] Build"
+      #  if: steps.website-changed-files.outputs.any_changed == 'true'
+      #  run: pnpm build
+      #  working-directory: website
