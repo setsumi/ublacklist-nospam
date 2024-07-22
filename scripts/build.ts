@@ -236,7 +236,7 @@ async function main() {
   const { browser, version, debug, watch } = z
     .object({
       browser: z.enum(["chrome", "firefox", "safari"]).default("chrome"),
-      version: z.string().default("8.9.0"),
+      version: z.string().default("8.9.1"),
       debug: z.boolean().default(false),
       watch: z.boolean().default(false),
     })
